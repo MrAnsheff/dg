@@ -17,8 +17,8 @@ class NewsItem extends StatelessWidget {
           return Column(
                 children: <Widget>[
                   ListTile(
-                    title: Container(color: Colors.grey[200], width: 150.0, height: 24, margin: EdgeInsets.only(top:5.0, bottom: 5.0),),
-                    subtitle: Container(color: Colors.grey[200], width: 150.0, height: 24, margin: EdgeInsets.only(top:5.0, bottom: 5.0),),
+                    title: Container(color: Colors.grey[400], width: 150.0, height: 24, margin: EdgeInsets.only(top:5.0, bottom: 5.0),),
+                    subtitle: Container(color: Colors.grey[400], width: 150.0, height: 24, margin: EdgeInsets.only(top:5.0, bottom: 5.0),),
                     
                   ),
                   Divider(
@@ -36,8 +36,8 @@ class NewsItem extends StatelessWidget {
               return Column(
                 children: <Widget>[
                   ListTile(
-                    title: Container(color: Colors.grey[200], width: 150.0, height: 24, margin: EdgeInsets.only(top:5.0, bottom: 5.0),),
-                    subtitle: Container(color: Colors.grey[200], width: 150.0, height: 24, margin: EdgeInsets.only(top:5.0, bottom: 5.0),),
+                    title: Container(color: Colors.grey[400], width: 150.0, height: 24, margin: EdgeInsets.only(top:5.0, bottom: 5.0),),
+                    subtitle: Container(color: Colors.grey[400], width: 150.0, height: 24, margin: EdgeInsets.only(top:5.0, bottom: 5.0),),
                     
                   ),
                   Divider(
@@ -52,12 +52,12 @@ class NewsItem extends StatelessWidget {
               children: <Widget>[
                 ListTile(
                   onTap: (){Navigator.pushNamed(context, '/$itmId');},
-                  title: Text(itemSnapshot.data.title),
-                  subtitle: Text('${itemSnapshot.data.score}'),
+                  title: Text(itemSnapshot.data.title,style: TextStyle(color:Colors.white,)),
+                  subtitle: Text('${itemSnapshot.data.score}',style: TextStyle(color:Colors.grey[500],)),
                   trailing: Column(
                     children: <Widget>[
-                      Icon(Icons.comment),
-                      Text("${itemSnapshot.data.descendants}")
+                      Icon(Icons.comment, color: Colors.white),
+                      Text("${itemSnapshot.data.descendants}",style: TextStyle(color:Colors.white,))
                     ],
                   ),
                 ),

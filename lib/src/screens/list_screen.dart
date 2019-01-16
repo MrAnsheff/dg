@@ -10,8 +10,9 @@ class ListScreen extends StatelessWidget {
     
 
     return Scaffold(
+      backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
-        title: Text('Haker News'),
+        title: Text('DriftoGram'),
       ),
       body: listOfNews(bloc),
     );

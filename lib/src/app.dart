@@ -9,6 +9,7 @@ class App extends StatelessWidget {
     return ListProvider(
       child: DetailProvider(
         child: MaterialApp(
+          theme: ThemeData(primaryColor: Colors.grey[800], backgroundColor: Colors.grey[800]),
           onGenerateRoute: (RouteSettings settings) {
             if (settings.name == '/') {
               return MaterialPageRoute(builder: (context) {
