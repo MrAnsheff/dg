@@ -1,6 +1,6 @@
-# news
+#  News
 
-A new Flutter project.
+App for News Feed
 
 ## Getting Started
 
